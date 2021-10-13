@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Graphs</title>
+  </head>
+  <body>
+    <div class="info">
+      <div class="info_blk">
+        <label for="">I: </label>
+        <input type="text" vale="" id="i_info" />
+      </div>
+      <div class="info_blk">
+        <label for="">N: </label>
+        <input type="text" value="" id="n_info" />
+      </div>
+      <div class="info_blk">
+        <label for="">I/N Ratio: </label>
+        <input type="text" value="" id="in_info" />
+      </div>
+    </div>
+    <div class="chart_area">
+      <div class="control_btns">
+        <button id="ratio_btn" class="" onclick="handleClick('ratio_btn');">
+          Ratio
+        </button>
+        <button id="data_btn" class="" onclick="handleClick('data_btn');">
+          Data
+        </button>
+        <button id="plot_btn" class="" onclick="handleClick('plot_btn');">
+          Plot
+        </button>
+      </div>
+      <div class="charts">
+        <canvas id="myChart1"></canvas>
+        <canvas id="myChart2"></canvas>
+        <canvas id="myChart3"></canvas>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@1.27.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-streaming@2.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@1.1.1/dist/chartjs-plugin-zoom.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
